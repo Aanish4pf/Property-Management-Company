@@ -107,6 +107,7 @@ section form {
 
 section input[type="text"],
 section input[type="email"],
+section input[type="subject"],
 section textarea {
     width: 100%; 
     padding: 1rem; 

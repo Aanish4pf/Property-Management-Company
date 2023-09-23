@@ -1,0 +1,73 @@
+<!DOCTYPE html> <html>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Property Management Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="Logo.png" alt="Company Logo">
+            <ul> 
+                <li><a href="#top ">Home</a></li> 
+                <li><a href="#about">About</a></li> 
+                <li><a href="#services">Services</a></li> 
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1><span class="company-name">Karkelle</span> <span class="management-text">Management</span></h1> 
+        <p>Making your property completely <br> passive for you</p>
+        <a href="#contact" class="cta">Get in Touch</a>
+    </header>
+    <main>
+
+        <!----------------About------------------>
+        <section id="about">
+            <h2>About Us</h2> 
+            <p>Karkelle Management is a distinguished boutique property management company with a relentless commitment to simplifying the intricacies of property ownership. Our mission is to empower property owners with streamlined solutions that provide not only peace of mind but also unlock the true potential of their investments. <br> <br>With a wealth of experience in the real estate industry, our team understands the unique challenges and demands that property ownership entails. Whether you're a seasoned investor or new to the world of real estate, we are here to guide you every step of the way.  <br> <br>At Karkelle Management, we offer a comprehensive suite of property management services tailored to meet your specific needs. From optimizing rental income and tenant relations to handling maintenance and administrative tasks, our expertise covers all aspects of property management. We pride ourselves on our proactive approach, attention to detail, and unwavering commitment to maximizing the value of your assets.  <br> <br>As advocates for transparent and efficient property management, we leverage the latest technology and industry best practices to deliver exceptional results. We view each property under our care as a unique opportunity to enhance its performance and profitability.  <br> <br>Your property investment journey is a partnership, and we're dedicated to helping you achieve your financial goals while enjoying the peace of mind that comes with professional property management. Trust Karkelle Management to be your trusted ally in the world of real estate. </p>
+        </section>
+
+
+        <!-----------------Services--------------->
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service">
+                <img src="Investment Property.jpeg" alt="Service 1">
+                <h3>Investment Property</h3>
+                <p>To ensure tenants, taxes, utilities and insurance are taken care of.</p>
+            </div>
+            <div class="service">
+                <img src="Vacation Management.jpeg" alt="Service 2">
+                <h3>Vacation Management</h3>
+                <p>To ensure leaks, garden and mail is taken care of while you enjoy your vacation.</p>
+            </div>
+            <div class="service">
+                <img src="Airbnb Homes.jpeg" alt="Service 3">
+                <h3>Airbnb Homes</h3>
+                <p>To ensure guest experience hotel like service.</p>
+            </div>
+        </section>
+
+
+        <!--------------------Contact Info-------------->
+        <section id="contact"> 
+            <h2>Get in Touch</h2> 
+            <p>Get in touch with us today! We are here to answer any questions you may have via email. Simply fill out the information required and we will get back to you as soon as possible.</p>
+            <form actions="submit-form.php" method="post"> 
+                <input type="text" name="name" placeholder= "Name..." required> 
+                <input type="email" name="email" placeholder= "Email..." required>
+                <input type="subject" name="subject" placeholder= "Subject..." required>
+                <textarea type="message" name="message" rows="5" placeholder="Your Message..." required></textarea>
+                <button type="submit">Submit</button>
+            </form> 
+        </section>
+
+
+    </main>
+    <footer>
+        <p>Copyright &copy; Karkelle Management 2023</p>
+    </footer> 
+</body>
+</html>

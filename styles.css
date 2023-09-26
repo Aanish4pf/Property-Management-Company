@@ -5,6 +5,7 @@
 }
 html{
     scroll-behavior: smooth;
+    height: -webkit-fill-available;
 }
 
 body { 
@@ -12,7 +13,7 @@ body {
 }
 
 header {
-    background-image: url('background\ image.jpeg');
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('background\ image.jpeg');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -22,6 +23,7 @@ header {
     justify-content: center; 
     height: 100vh;
     text-align: center;
+    
 }
 
 header h1 {
@@ -32,7 +34,7 @@ header h1 {
 
 header p {
     font-size: 20px;
-    margin: 0.5rem 0;
+    margin: 2.5rem 0;
 }
 
 header a.cta { 
@@ -107,7 +109,7 @@ section form {
 
 section input[type="text"],
 section input[type="email"],
-section input[type="subject"],
+section input[type="tel"],
 section textarea {
     width: 100%; 
     padding: 1rem; 
@@ -212,4 +214,123 @@ header img {
 
 .management-text {
     color: #A18243;
+}
+
+.text-box {
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin-top to control the space between the title and the paragraph */
+}
+
+.text-box h1{
+    font-size: 190px;
+    line-height: 160px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+.text-box p {
+    font-size: 20px; /* Adjust the font size as needed */
+    margin-bottom: 30px; /* Adjust the margin-top to control the space between the title and the paragraph */
+    color: #fff;
+}
+/* Add this CSS code at the end of your existing stylesheet */
+
+/* Mobile view styles */
+@media only screen and (max-width: 600px) {
+    header h1 {
+        font-size: 60px; /* Adjust the font size for mobile devices */
+        margin-top: 80px; /* Adjust the margin-top for mobile devices */
+    }
+
+    header p {
+        font-size: 16px; /* Adjust the font size for mobile devices */
+        margin: 1rem 0; /* Adjust the margin for mobile devices */
+    }
+
+    .text-box h1 {
+        font-size: 120px; /* Adjust the font size for mobile devices */
+        line-height: 100px; /* Adjust the line-height for mobile devices */
+    }
+
+    .text-box p {
+        font-size: 16px; /* Adjust the font size for mobile devices */
+        margin-top: 10px; /* Adjust the margin-top for mobile devices */
+    }
+
+    header a.cta {
+        font-size: 16px; /* Adjust the font size for mobile devices */
+    }
+
+    nav {
+        padding: 10px 5%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        top: 60px;
+        right: 0;
+        left: 0;
+        z-index: 1000;
+        padding: 0;
+    }
+
+    nav li {
+        margin: 0.5rem 0;
+    }
+
+    nav a {
+        color: #fff;
+        margin: 0;
+    }
+
+    main {
+        padding: 2rem 0;
+    }
+
+    section {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    section h2 {
+        font-size: 24px; /* Adjust the font size for mobile devices */
+        margin-bottom: 1rem;
+    }
+
+    section form {
+        max-width: 100%;
+    }
+
+    section input[type="text"],
+    section input[type="email"],
+    section input[type="tel"],
+    section textarea {
+        padding: 1rem;
+        font-size: 16px; /* Adjust the font size for mobile devices */
+        margin-bottom: 1rem;
+    }
+
+    section button[type="submit"] {
+        font-size: 16px; /* Adjust the font size for mobile devices */
+    }
+
+    footer {
+        padding: 1rem 0;
+    }
+
+    footer p {
+        font-size: 14px; /* Adjust the font size for mobile devices */
+    }
+
+    header img {
+        width: 60px; /* Adjust the image size for mobile devices */
+        margin-bottom: 0.5rem;
+    }
+
+    .service {
+        width: 100%;
+        margin: 2rem 0;
+    }
 }

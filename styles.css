@@ -381,6 +381,7 @@ header img {
 
     .text-box h1 {
         font-size: 45px; /* Adjust the font size to your preference */
+        line-height: 1.2;
     }
 
     #about {

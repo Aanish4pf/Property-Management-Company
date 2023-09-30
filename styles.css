@@ -25,7 +25,9 @@ header {
     align-items: center;
     justify-content: center; 
     height: 100vh;
-    text-align: center;   
+    text-align: center;  
+    min-height: 100vh; /* Use min-height to ensure it covers the entire viewport */
+    width: 100%; 
 }
 
 header h1 {
@@ -412,6 +414,7 @@ header img {
     .footer-item {
         margin: 10px; /* Add spacing between items */
     }
+    
     
 }
 

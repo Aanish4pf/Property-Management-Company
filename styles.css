@@ -307,7 +307,7 @@ header img {
 
 .mobile-menu {
     display: none;
-    background-color: rgba(36, 36, 36, 0.8); /* Semi-transparent black background */
+    background-color: rgba(36, 36, 36, 0.95); /* Semi-transparent black background */
     position: absolute;
     top: 0;
     left: 0;

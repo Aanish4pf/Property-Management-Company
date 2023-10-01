@@ -229,8 +229,10 @@ header img {
 }
 
 #services {
-    padding: 4rem 0;
-    text-align: center;
+    text-align: center; /* Center-align the text */
+    margin: 4rem auto; /* Default margin for desktop view */
+    max-width: 90%; /* Limit the width to prevent overflow */
+    font-size: 18px; /* Adjust the font size for mobile view */
 }
     #services h2 {
     margin-bottom: 2rem;
@@ -305,12 +307,23 @@ header img {
 
 .mobile-menu {
     display: none;
-    background-color: #333;
+    background-color: rgba(36, 36, 36, 0.8); /* Semi-transparent black background */
     position: absolute;
-    top: 60px;
+    top: 0;
     left: 0;
     right: 0;
     z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s, max-height 0.3s ease-in-out; /* Add transition properties */
+    max-height: 0; /* Initially set to 0 */
+    overflow: hidden;
+}
+
+
+.mobile-menu.open {
+    opacity: 1;
+    max-height: 100%; /* Set max-height to reveal the menu smoothly */
+    
 }
 
 .mobile-menu ul {
@@ -328,6 +341,7 @@ header img {
     text-decoration: none;
 }
 
+
 /* CSS for horizontal services menu */
 .mobile-menu.open ul {
     display: flex;
@@ -337,7 +351,7 @@ header img {
     height: 100vh;
     margin: 0; /* Remove margin */
     padding: 0;
-    background-color: #A18243; /* Add a background color for better visibility */
+    background-color: transparent; /* Add a background color for better visibility */
 }
 
 .mobile-menu.open li {
@@ -418,6 +432,11 @@ header img {
     }
     
     
+}
+
+.mobile-menu.open {
+    opacity: 1;
+    max-height: 100%; /* Set max-height to reveal the menu smoothly */
 }
 
 
